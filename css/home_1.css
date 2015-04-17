@@ -1,0 +1,240 @@
+
+body {
+	font: normal 16px 微软雅黑,  Arial, sans-serif;
+}
+.container {
+	padding: 10px;
+	position: relative;
+	
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+.main {
+	height: 600px;
+	width: 100%;
+}
+
+.client {
+
+	position: absolute;
+	/*width: 400px;*/
+	width: 37%;
+	height: 300px;
+}
+
+.reminder {
+	padding: 10px 20px;
+	position: absolute;
+	height: 260px;
+	/*width: 250px;
+	left: 440px;*/
+	width: 23%;
+	left: 41%;
+}
+
+.notice {
+	padding: 10px 20px;
+	position: absolute;
+	height: 260px;
+	/*width: 360px;
+	left: 720px;*/
+	width: 32%;
+	left: 67%;
+}
+
+.new-services{
+	position: absolute;
+	/*width: 400px;*/
+	width: 37%;
+	height: 250px;
+	top: 320px;
+	padding: 20px 10px;
+}
+
+.promotions {
+	position: absolute;
+	/*width: 640px;
+	left: 440px;*/
+	width: 58%;
+	left: 41%;
+	height: 290px;
+	top: 280px;
+	padding: 20px 10px;
+}
+
+.reminder, .notice, .new-services, .promotions {
+	box-shadow: 0 0 2px 3px rgba(191,191,191,0.5);
+	border-radius: 5px;
+	cursor: pointer;
+	border: solid 1px #bfbfbf;
+
+	-webkit-transition: border-color 0.5s ease-in-out,box-shadow 0.5s ease-in-out;
+	-moz-transition:  border-color 0.5s ease-in-out,box-shadow 0.5s ease-in-out;
+	-o-transition: border-color 0.5s ease-in-out,box-shadow 0.5s ease-in-out;
+	-ms-transition: border-color 0.5s ease-in-out,box-shadow 0.5s ease-in-out;
+	transition:  border-color 0.5s ease-in-out,box-shadow 0.5s ease-in-out;
+}
+
+.reminder:hover, .notice:hover, .new-services:hover, .promotions:hover {
+	box-shadow: 0 0 2px 3px rgba(137,137,188,0.5);
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=315, color=#8989bc);*/
+	border-color:  #897bbc;
+}
+
+.reminder:hover>.title, .notice:hover>.title, 
+.new-services:hover>.title, .promotions:hover>.title,
+ .promotions:hover>#promotions-text{
+	color: #897bbc;
+	border-color: #897bbc;
+}
+
+.client-base, .client-extra, .client-extra-lasttime{
+	display: block;
+	position: relative;
+	height: 20px;
+	line-height: 20px;
+
+}
+
+.client-base {
+	padding: 10px 0;
+	padding-left: 80px;
+}
+
+.client-extra {
+	padding: 5px 0 5px 15px;
+}
+
+.client-extra-lasttime {
+	padding: 0 0 5px 60px;
+	color: #fe9058;
+}
+
+.client-color {
+	color: #fe9058;
+	padding: 0 5px;
+}
+
+.title {
+	position: relative;
+	
+	font-size: 25px;
+	color: #bfbfbf;
+	border: 0px solid #bfbfbf;
+	-webkit-transition: border-color 0.5s ease-in-out,color 0.5s ease-in-out;
+	-moz-transition:  border-color 0.5s ease-in-out,color 0.5s ease-in-out;
+	-o-transition: border-color 0.5s ease-in-out,color 0.5s ease-in-out;
+	-ms-transition: border-color 0.5s ease-in-out,color 0.5s ease-in-out;
+	transition:  border-color 0.5s ease-in-out,color 0.5s ease-in-out;
+}
+
+.title.top {
+	height: 60px;
+	line-height: 60px;
+	border-bottom-width: 1px;
+}
+
+.title.left {
+	width: 45px;
+	text-align: center;
+	height: 100%;
+	border-right-width: 1px; 
+	float:left;
+}
+
+.content {
+	position: relative;
+	top: 20px;
+}
+
+.reminder-list>li, .notice-list>li {
+	height: 20px;
+	line-height: 20px;
+	padding: 5px 10px;
+}
+
+.notice-list>li{
+	padding: 2px 10px;
+	overflow: hidden;
+}
+.notice-list a,.promotions a {
+	text-decoration: none;
+}
+
+.notice-list a:hover,.promotions a:hover {
+	text-decoration: underline;
+}
+
+/*slidesjs-pagination*/
+.slidesjs-pagination {
+  list-style: none;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 5px;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../images/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+#new-services-slides {
+	/*width: 312px;*/
+	width: 78%;
+	position: relative;
+	left: 20px;
+}
+
+#promotions-slides {
+	/*width: 553px;*/
+	width: 86%;
+	position: relative;
+	left: 20px;
+	top: 10px;
+}
+
+#new-services-slides img, #promotions-slides img{
+	height: 100%;
+}
+
+ 
+
+ #promotions-text {
+	overflow: hidden;
+	height: 30px;
+	/*width: 553px;*/
+	width: 86%;
+	left: 20px;
+	position: relative;
+	border: 0 solid #0cf;
+	border-bottom-width: 1px;
+ }
+
+ #promotions-text li {
+ 	height: 20px;
+ 	line-height: 20px;
+ 	padding: 5px 0;
+ }

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/home_1.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slides.js"></script>
+	<script>
+		$(document).ready(function() {
+			var services_slides_width = $('#new-services-slides').width(),
+				promotions_slides_width = $('#promotions-slides').width();
+			$('#new-services-slides').slidesjs({
+		        width: 600,
+		        height: 208,
+		        play: {
+		          active: false,
+		          auto: true,
+		          interval: 4000,
+		          swap: true,
+		          pauseOnHover: true
+		        },
+		        navigation: {
+		          active: false
+		        },
+		        pagination: {
+		          effect: "slide",
+		          active: true
+		        }
+	      	});
+	      	$('#promotions-slides').slidesjs({
+		        width: promotions_slides_width,
+		        height: 205,
+		        play: {
+		          active: false,
+		          auto: true,
+		          interval: 4000,
+		          swap: true,
+		          pauseOnHover: true,
+		          effect: 'fade'
+		        },
+		        navigation: {
+		          active: false,
+		          mousewheel: false
+		        },
+		        pagination: {
+		          effect: "fade",
+		          active: true
+		        },
+	      	});
+		});
+	</script>
+</head>
+<body>
+	<div class="container main">
+		<div class="container client">
+			<span class='client-base'>尊敬的用户： 
+				<span class="client-color">陈纯冰</span> 
+				上午好！
+			</span>
+			<span class='client-base'>您当前的安全工具为<span class="client-color">K宝</span> 。</span>
+			<span class='client-extra'>欢迎您使用中国农业银行个人网上银行！</span>			
+			<span class='client-extra'>您此次登录农行网银是第<span class="client-color">377</span>次</span>
+			<span class='client-extra'>您上次登录的时间是：</span>
+			<span class='client-extra-lasttime'>2013年12月10日9时12分32秒</span>
+			<span class='client-extra'>登录IP：<span class="client-color">187.68.15.7</span></span>
+		</div>
+		<div class="container reminder">
+			<div class="title top">
+				温馨提示
+			</div>
+			<div class="content">
+				<ul class="reminder-list">
+					<li>您未设置用户名</li>
+					<li>您的证书即将到期</li>
+				</ul>
+				
+			</div>
+		</div>
+		<div class="container notice">
+			<div class="title top">
+				重要公告
+			</div>
+			<div class="content">
+				<ul class="notice-list">
+					<li><a href="#" title='关于宁夏分行系统维护的公告（12月8日）'>关于宁夏分行系统维护的公告（12月8日）</a></li>
+					<li><a href="#" title='关于天津分行系统维护的公告（12月7日-12月8日）'>关于天津分行系统维护的公告（12月7日-12月8日）</a></li>
+					<li><a href="#" title='关于我行基金代销系统升级维护的公告（12月12日）'>关于我行基金代销系统升级维护的公告（12月12日）</a></li>
+					<li><a href="#" title='关于我行电子银行系统暂停服务的公告（12月8日）'>关于我行电子银行系统暂停服务的公告（12月8日）</a></li>
+				</ul>
+				
+			</div>
+		</div>
+		<div class="container new-services">
+			<div class="title left">新功能</div>
+			<div id="new-services-slides">
+				<img src="images/zidonglicai.jpg" alt="自动理财">
+				<img src="images/jijin.jpg" alt="基金宝">
+				<img src="images/guijinshu.jpg" alt="贵金属">
+			</div>
+		</div>
+		<div class="container promotions">
+			<div class="title left">优惠活动</div>
+			<ul id="promotions-text">
+				<li><a href="#">个人网银自动理财有奖问卷调查</a></li>
+				<li><a href="#">个人网银跨境电汇手续费优惠进行中</a></li>
+				<li><a href="#">京分行“注册有礼”抽奖活动</a></li>
+			</ul>
+			<div id="promotions-slides">
+				<img src="images/nongyinhuili.jpg" alt="农银汇理">
+				<img src="images/credit_jifen_3.jpg" alt="信用卡积分">
+			</div>
+		</div>
+		
+	</div>
+
+
+
+</body>
+</html>

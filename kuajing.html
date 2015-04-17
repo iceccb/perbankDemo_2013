@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>kuajing</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/kuajing.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]><link href="css/public_ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>	
+	<script type="text/javascript" src="js/transition.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<script type="text/javascript" src="js/kuajing.js"></script>
+</head>
+<body>
+	<div class="main-wrapper">
+		<div class="cur-location">
+			<span class="title">您当前的位置是：</span>
+			<span class="location">个人外汇 > 跨境电汇 > 汇出汇款</span>
+		</div>
+		<div class="form-wrapper">
+			<ul class="form-ul" style='display:none'>
+				<li>
+					<ul class="row-ul">
+						<li class='li-left'>汇款人姓名</li>
+						<li>
+							<span class="show-text">CHUNBING CHEN</span>
+							<a href="kuajing.html"  class="batch" title='修改个人信息' data-icon='&#xf0ab;'></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="row-ul">
+						<li class='li-left'>卡号</li>
+						<li>
+							<select  class='form-control  input-sm'>
+								<option value="">请选择</option>
+								<option value="">0|北京分行|6228480010644026816|借记卡|陈纯冰</option>
+								<option value="">1|北京分行|6228480010644026817|借记卡|陈纯冰</option>
+								<option value="">2|北京分行|6228480010644026818|借记卡|陈纯冰</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="row-ul">
+						<li class='li-left'>外币子账户</li>
+						<li>
+							<select class='dropdown' data-settings='{"width":"100px"}'>
+								<option value="">请选择</option>
+								<option value="">0000|美元</option>
+								<option value="">0000|欧元</option>
+								<option value="">0000|港币</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="row-ul">
+						<li class='li-left'>汇款金额</li>
+						<li>
+							<span class="text-pre">$</span><input type="text">
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="row-ul">
+						<li class='li-left'>收款方</li>
+						<li>
+							<select class='dropdown' data-settings='{"width":"250px"}'>
+								<option value="">请选择</option>
+								<option value="">SFDS|SDFD|阿联酋|ARE|澳元</option>
+								
+							</select>
+							<a href="#" class="batch" title='修改收款方' data-icon='&#xf0ab;'></a>
+							<a href="#" class="batch" title='新增收款方' data-icon='&#xf173;'></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="row-ul">
+						<li class='li-left'>汇款附言</li>
+						<li>
+							<input type="text" placeholder='英文'>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="row-ul">
+						<li class='li-left'>交易编码</li>
+						<li>
+							<select class='dropdown' data-settings='{"width":"250px"}'>
+								<option value="">请选择</option>
+								<option value="">109000-其他支出</option>
+								<option value="">202020-公务及商务差旅支出</option>
+								<option value="">202030-因私旅游支出</option>
+								<option value="">202040-医疗、保健支出</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="row-ul">
+						<li class='li-left'>交易附言</li>
+						<li>
+							<select class='dropdown' data-settings='{"width":"250px"}'>
+								<option value="">请选择</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="row-ul">
+						<li class='li-left'>国内外费用承担</li>
+						<li>
+							<select class='dropdown' data-settings='{"width":"150px"}'>
+								<option value="">请选择</option>
+								<option value="">SHA-共同承担</option>
+								<option value="">BEN-收款人承担</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="jiaoyixuzhi">办理跨境电汇业务前，请点击此处仔细阅读《交易须知》。</a>
+				</li>
+				<li>
+					<input type="checkbox">我已仔细阅读、了解并接受《交易须知》全部内容。 
+				</li>
+			</ul>
+			<form class='form-inline' role='form' action='danbi_queren.html' method='post'>
+				<span class="form-title">汇款信息</span>
+				<ul class="form-ul">
+					<li>
+						<ul class="row-ul">
+							<li class='li-left'>汇款人姓名</li>
+							<li>
+								<span class="show-text">CHUNBING CHEN</span>
+								<a href="kuajing.html"  class="batch" title='修改个人信息' data-icon='&#xf0ab;'></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row-ul">
+							<li class='li-left'>卡号</li>
+							<li>
+								<select  class='form-control input-sm'>
+									<option value="">请选择</option>
+									<option value="">0|北京分行|6228480010644026816|借记卡|陈纯冰</option>
+									<option value="">1|北京分行|6228480010644026817|借记卡|陈纯冰</option>
+									<option value="">2|北京分行|6228480010644026818|借记卡|陈纯冰</option>
+								</select>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row-ul">
+							<li class='li-left'>外币子账户</li>
+							<li>
+								<select class='form-control input-sm'>
+									<option value="">请选择</option>
+									<option value="">0000|美元</option>
+									<option value="">0000|欧元</option>
+									<option value="">0000|港币</option>
+								</select>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row-ul">
+							<li class='li-left'>汇款金额</li>
+							<li><input type="text" >
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row-ul">
+							<li class='li-left'>交易编码</li>
+							<li>
+								<select class='form-control input-sm'>
+									<option value="">请选择</option>
+									<option value="">109000-其他支出</option>
+									<option value="">202020-公务及商务差旅支出</option>
+									<option value="">202030-因私旅游支出</option>
+									<option value="">202040-医疗、保健支出</option>
+								</select>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row-ul">
+							<li class='li-left'>交易附言</li>
+							<li>
+								<select class='form-control input-sm' >
+									<option value="">请选择</option>
+								</select>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<span class="form-title">收款信息</span>
+				<ul class="form-ul">
+					<li>
+						<ul class="row-ul">
+							<li class='li-left'>收款方</li>
+							<li>
+								<select class='form-control input-sm'>
+									<option value="">请选择</option>
+									<option value="">SFDS|SDFD|阿联酋|ARE|澳元</option>
+									
+								</select>
+								<a href="#" class="batch" title='修改收款方' data-icon='&#xf0ab;'></a>
+								<a href="#" class="batch" title='新增收款方' data-icon='&#xf173;'></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row-ul">
+							<li class='li-left'>汇款附言</li>
+							<li>
+								<input type="text" placeholder='英文'>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<span class="form-title">费用承担</span>
+				<ul class="form-ul feiyong">
+					<li><input type="radio"  name="feiyong">SHA-共同承担 (国内银行费用由汇款人承担，国外银行费用由收款人承担)</li>
+					<li><input type="radio"  name="feiyong">BEN-收款人承担 (国内、外银行费用由收款人承担，从汇款金额中扣除)</li>
+				</ul>
+				<div class="xuzhi-wrapper">
+					<input type="checkbox">我已仔细阅读、了解并接受
+					<a href="#" class="jiaoyixuzhi" data-toggle="modal"  data-target="#xuzhi">《交易须知》</a>全部内容。
+				</div>
+				<div class="modal fade bs-modal-sm" aria-labelledby="myModalLabel" role="dialog" aria-hidden="true" id="xuzhi">
+					<div class="modal-dialog medium">
+						<div class="modal-content">	
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					        <h4 class="modal-title">跨境电汇交易须知</h4>
+					      </div>
+					      <div class="modal-body">
+					        <p>One fine body…</p>
+					      </div>   
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="submit-wrapper">
+				<input type="button" id='submit-button' class='button submit' value='提交' >
+			</div>
+		</div>
+	</div>
+</body>
+</html>

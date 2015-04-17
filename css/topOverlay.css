@@ -1,0 +1,164 @@
+.topOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	height: 36px;
+}
+
+.topOverlay .top {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 36px;
+	background-color: rgb(66,66,66);
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+.mapwrapper {
+	width: 280px;
+	padding-top: 3px;
+	margin: 0px auto;
+}
+.search-wrapper {
+	 display: inline-block;
+	width: 200px;
+	height: 28px;
+	border: rgb(217,217,217) 1px solid;
+	background-color: rgb(255,255,255);
+	margin-right: 2px;
+}
+
+.search-wrapper:hover {
+	border-color: rgb(185,185,185);
+}
+
+#search-input:focus  {
+	border-color: rgb(77, 144, 254);
+}
+
+#search-input {
+	border: none;
+	width: 198px;
+	height: auto;
+}
+
+.search-icon {
+	float: right;
+	background:none repeat scroll 0% 0% rgb(0, 150, 221);
+	/* display: inline-block; */
+}
+
+.search-icon:hover {
+	background:none repeat scroll 0% 0% rgb(60, 185, 228)
+}
+
+
+
+.search-icon input, .topOverlay .tools span {
+	background: url(../images/topOverlay.png) no-repeat scroll 0px 0px transparent;
+}
+
+.search-icon input {
+	width: 40px;
+	height: 30px;
+	display: block;
+	cursor: pointer;
+	border: medium none;
+	margin: 0 auto;
+	
+	background-position: 10px 5px;
+}
+
+.topOverlay .tools {
+	position: absolute;
+	height: 30px;
+	top: 3px;
+	right: 10px;
+	line-height: 30px;
+	list-style: none;
+}
+
+.topOverlay .tools a {
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.tools .skin span {
+	background-position: -40px 0;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+
+.tools li {
+	width: 16px;
+	height: 30px;
+	overflow: hidden;
+	transition:  width 1s ease-in-out;
+}
+
+.tools li:hover {
+	width: 50px;
+}
+
+.topOverlay > .sub {
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 300px;
+	background-color: rgba(0,0,0,0.5);
+	background-color: rgb(0,0,0)\9;
+	filter: alpha(opacity=50);
+	display: none;
+}
+
+.bg_img {
+	margin: auto;
+	height: 120px;
+	width: 866px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	list-style: none;
+}
+
+.bg_img img{
+	cursor: pointer;
+	width: 150px;
+	height: 120px;
+}
+
+.bg_img li {
+	margin: 0 10px;
+	display: inline-block;
+}
+
+.bg_img li:hover {
+	box-shadow: rgb(255,255,255) 0px 0px 10px 5px;
+}
+
+#overlay_close {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+	background-color: rgb(66,66,66);
+	line-height: 21px;
+	color: rgb(255,255,255);
+	text-decoration: none;
+	text-align: center;
+	font-size: 12px;
+}
+
+#overlay_close:hover {
+	color: rgb(255, 149, 0);
+}
+		
+		

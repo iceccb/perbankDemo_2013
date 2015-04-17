@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户查询</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/public.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]><link href="css/public_ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+</head>
+<body>
+	<div class="cur-location">
+		<span class="title">您当前的位置是：</span>
+		<span class="location">我的账户 > 我的账户 > 账户查询</span>
+	</div>
+	<div class="container">
+		<table class="table table-hover ">
+			<thead>
+			  <tr>
+			    <th></th>
+			    <th>账户别名</th>
+			    <th>注册账号</th>
+			    <th>币种</th>
+			    <th>开户行</th>
+			    <th>注册渠道</th>
+			    <th class='text-center'>操作</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr >
+			  	<td class='text-center'><input value="" type="checkbox"></td>
+			    <td>借记卡6816</td>
+			    <td>6228480010644026816</td>
+			    <td>人民币</td>
+			    <td>北京分行</td>
+			    <td>网点注册</td>
+			    <td class='text-center'>
+			    	<a href="#" class="active" data-toggle="modal"  data-target="#zhanghuxinxi">账户信息</a>
+			    	<a href="#" class="active">明细</a>
+			    	<a href="#" class="active">单笔转账</a>
+			    	<a href="#" class="active">自动理财</a>
+			    </td>
+			  </tr>
+			  <tr>
+			  	<td class='text-center'><input value="" type="checkbox"></td>
+			    <td>借记卡6817</td>
+			    <td>6228480010644026817</td>
+			    <td>人民币</td>
+			    <td>北京分行</td>
+			    <td>网点注册</td>
+			    <td class='text-center'>
+			    	<a href="#" class="active">账户信息</a>
+			    	<a href="#" class="active">明细</a>
+			    	<a href="#" class="active">单笔转账</a>
+			    	<a href="#" class="active">自动理财</a>
+			    </td>
+			  </tr>
+			  <tr>
+			  	<td class='text-center'><input value="" type="checkbox"></td>
+			    <td>准贷记卡9401</td>
+			    <td>6228300010019401</td>
+			    <td>人民币</td>
+			    <td>北京分行</td>
+			    <td>网点注册</td>
+			    <td class='text-center'>
+			    	<a href="#" class="active">账户信息</a>
+			    	<a href="#" class="active">明细</a>
+			    	<a href="#" class="active">单笔转账</a>
+			    	<a href="#" class="active">漫游汇款</a>
+			    </td>
+			  </tr>
+			</tbody>
+		</table>	
+	</div>
+	<div class="modal fade bas-modal-sm" aria-labelledby="myModlLabel" role="dialog" aria-hidden="true" id="zhanghuxinxi">
+		<div class="modal-dialog">
+			<div class="modal-content">	
+		    	<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		        <h4 class="modal-title">账户信息</h4>
+		    	</div>
+		    	<div class="modal-body">
+			        <div class="row">
+				        <div class="col-md-3 col-sm-3">户名：</div>
+				        <div class="col-md-4 col-sm-4">陈纯冰</div>
+				    </div>
+				    <div class="row">
+				        <div class="col-md-3 col-sm-3">账户别名：</div>
+				        <div class="col-md-4 col-sm-4">借记卡6816</div>
+				    </div>
+				    <div class="row">
+				        <div class="col-md-3 col-sm-3">账号：</div>
+				        <div class="col-md-4 col-sm-4">6228480010644026816</div>
+				    </div>
+				    <div class="row">
+				        <div class="col-md-3 col-sm-3">账户类型：</div>
+				        <div class="col-md-4 col-sm-4">借记卡</div>
+				    </div>
+				    <div class="row">
+				        <div class="col-md-3 col-sm-3">开户行：</div>
+				        <div class="col-md-4 col-sm-4">北京分行</div>
+				    </div>
+				    <div class="row">
+				        <div class="col-md-3 col-sm-3">开户时间：</div>
+				        <div class="col-md-4 col-sm-4">2010年07月29日</div>
+				    </div>
+				    <div class="row">
+				        <div class="col-md-3 col-sm-3">账户注册类型：</div>
+				        <div class="col-md-4 col-sm-4">网点注册</div>
+				    </div>
+				    <div class="row">
+				        <div class="col-md-3 col-sm-3">账户状态：</div>
+				        <div class="col-md-4 col-sm-4">正常</div>
+				    </div>
+		    	</div>   
+			</div>
+		</div>
+	</div>
+	<div class="container text-center">
+		<button type="button" class="btn btn-primary btn-sm">余额查询</button>
+		<button type="button" class="btn btn-primary btn-sm">追加网银账户</button>
+	</div>
+	
+</body>
+</html>

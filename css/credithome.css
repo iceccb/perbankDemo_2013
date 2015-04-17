@@ -1,0 +1,307 @@
+@import url(reset.css);
+
+.container {
+	position: relative;
+	padding: 20px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+
+.main {
+	width: 100%;
+	/*height: 600px;*/
+	/*border: solid 1px #000;*/
+	padding: 10px;
+	background-color: #fff;
+
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.cordinate {
+	width: 100%;
+}
+
+.query_wraper {
+	padding: 0;
+}
+
+.cordinate ul {
+	height: 30px;
+	line-height: 30px;
+}
+
+.cordinate-li {
+	display: inline-block;
+	padding: 0 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #33cccc;
+}
+
+.cordinate-li.selected {
+	background-color: #09f;
+	background-color: rgba(0,0,255,0.5);
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.49), 0px 1px 0px rgb(255, 255, 255) inset;
+}
+
+.cordinate ul li:hover {
+	background-color: rgba(0,0,255,0.2);
+}
+
+.query_main_wraper {
+	/*height: 200px;*/
+	padding: 20px 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid rgb(0,0,255);
+	border: 1px solid rgba(0,0,255,0.5);
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.49), 0px 1px 0px rgb(255, 255, 255) inset;
+}
+
+.accout_list {
+	line-height: 40px;
+	cursor: pointer;
+	position: relative;
+}
+
+.accout_list li {
+	padding: 0 10px;
+	border: 0 solid #0cf;
+	border: 0 solid rgba(0,0,255,0.1);
+	border-bottom-width: 1px;
+	position: relative;
+}
+
+.accout_list li:hover {
+	top: 2px;
+	top: 0px\9;
+	box-shadow: 0 1px 1px 1px rgba(0,0,255,0.1);
+}
+
+.li_hover {
+	top: 2px;
+	box-shadow: 0 1px 1px 1px rgba(0,0,255,0.1);
+}
+
+/*.accout_list li:hover >  .accout_details_wraper{
+	height: 200px;
+}*/
+
+.accout_list .left, .accout_list .right{
+	display: inline-block;
+	position: relative;
+}
+
+.accout_list .left {
+	left: 20px;
+}
+.accout_list .right {
+	float: right;
+	padding: 0 10px;
+	width: 36%;
+
+}
+
+.accout_list .left span {
+	font-size: 16px;
+	margin-right: 20px;
+	color: #0c3;
+}
+
+.accout_list .right span {
+	font-size: 14px;
+}
+
+.accout_list .right a {
+	padding: 0 5px;
+}
+
+.accout_list .right a:hover {
+	text-decoration: underline;
+}
+
+.accout_details_wraper {
+	position: relative;
+	display: none;
+	height: 100px;
+	width: 100%;
+	border: 0 solid rgba(0,0,255,0.3);
+	border: 0 solid rgb(0,0,255)\9;
+	border-top-width: 1px;
+	overflow: hidden;
+}
+
+.close {
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+}
+
+.close > span {
+	border-radius: 18px;
+	height: 18px;
+	line-height: 18px;
+	width: 18px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	color: rgb(255,255,255);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.close > span:hover {
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+}
+
+/*设置模块*/
+.config_wraper {
+	height: 250px;
+}
+.config_list{
+	width: 33%;
+	float: left;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.config_list .title {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	width: 200px;
+	margin: 0 auto;
+	border: 0px solid rgba(0,0,255,0.3);
+	border-bottom-width: 1px;
+	font-size: 18px;
+}
+
+.config_list ul {
+	margin: 10px 0;
+}
+
+.config_list ul li {
+	font-size: 16px;
+	padding: 3px 0;
+}
+
+/*积分和分期模块*/
+.extra_wraper {
+	height: 200px;
+	padding: 10px 5px;
+	margin: 10px 0;
+
+}
+
+.jifen_wraper, .fenqi_wraper {
+	width: 45%;
+	padding: 5px 10px;
+	border: 1px solid rgba(0,0,255,0.5);
+	border: 1px solid rgb(0,0,255)\9;
+	height: 100%;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.3);
+}
+.jifen_wraper  {
+	float: left;
+}
+
+.fenqi_wraper {
+	float: right;
+}
+
+.extra_title {
+	position: absolute;
+	top: -15px;
+	left: 15px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	background-color: #fff;
+	padding: 0 10px;
+}
+
+.img_wraper {
+	overflow: hidden;
+	height: 180px;
+	width: 260px;
+	float: right;
+}
+
+.img_wraper img {
+	height: 180px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.slide {
+
+}
+
+.extra_wraper ul {
+	width: 100px;
+	float: left;
+	/*text-align: center;*/
+	padding: 10px 0;
+	margin-top: 20px;
+}
+
+.extra_wraper ul li {
+	margin: 10px 0;
+}
+
+/*信用卡申请模块*/
+.apply_wraper {
+	height: 240px;
+	padding: 10px 5px;
+	margin: 10px 0;
+
+}
+
+#credit_apply {
+	height: 220px;
+	width: 100%;
+	display: block;
+	border: 1px solid rgba(0,0,255,0.5);
+	border: 1px solid rgb(0,0,255)\9;
+	border-radius: 5px;
+}
+
+#credit_apply img {
+	height: 220px;
+	width: 100%;
+}
+
+#apply_query {
+	display: block;
+	position: absolute;
+	padding: 0 5px;
+	width: 50px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 30px;
+	border: 1px solid rgba(0,0,255,0.5);
+	font-size: 12px;
+	bottom: 10px;
+	right: 5px;
+	box-shadow: inset 0 0 1px 1px rgba(0,0,255,0.2);
+	background-color: rgba(0,0,0,0.2);
+}
+
+#apply_query:hover {
+	box-shadow: 0 0 1px 1px rgba(255,255,255,0.5);
+	color: rgba(255,255,255,0.9);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>perbank_demo_2</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/perbank_demo_2.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+	<script type='text/javascript' src='js/jquery.dcmegamenu.1.2.js'></script>
+	<script type='text/javascript' src='js/perbank_demo_2.js'></script>
+</head>
+<body>
+	<div class="header">
+		<div class="inner clearfix">
+			<img src="images/abc.png" class='abc_logo' alt="中国农业银行">
+			<img src="images/e_logo.png" class='e_logo' alt="金e顺" >
+			<div class="nav-wrapper">
+			<ul class="mega-menu" id="topmenu">
+					<li><a href="#">我的账户</a>
+						<ul class='submenu'>
+							<li><a href="#">我的账户</a>
+								<ul>
+									<li><a href="zhanghuchaxun.html" target='content_iframe'>账户查询</a></li>
+									<li><a href="#">追加网银账户</a></li>
+								</ul>
+							</li>
+							<li><a href="#">账户服务</a>
+								<ul>
+									<li><a href="#">账户挂失</a></li>
+									<li><a href="#">账户隐藏</a></li>
+									<li><a href="#">别名设置</a></li>
+									<li><a href="#">密码修改</a></li>
+								</ul>
+							</li>
+							<li><a href="#">跨行账户管理</a>
+								<ul>
+									<li><a href="#">他行账户查询签约/解约</a></li>
+									<li><a href="#">他行账户查询</a></li>
+									<li><a href="#">他行账户支付签约/解约</a></li>
+									<li><a href="#">他行转农行</a></li>
+								</ul>
+							</li>
+							<li><a href="#">单据流水查询</a>
+								<ul>
+									<li><a href="liushuichaxun.html" target='content_iframe'>网银交易查询</a></li>
+									<li><a href="#">对账单</a></li>
+									<li><a href="#">电子回单</a></li>
+									<li><a href="#">电子工资单</a></li>
+								</ul>
+							</li>
+							
+						</ul>
+					</li>
+					<li><a href="#">转账汇款</a>
+						<ul class='submenu'>
+							<li><a href="#">单笔转账</a>
+								<ul>
+									<li><a href="danbi.html" target='content_iframe'>单笔转账</a></li>
+									<li><a href="#">网银账户互转</a></li>
+									<li><a href="#">快捷转账</a></li>
+								</ul>
+							</li>
+							<li><a href="#">收款方管理</a>
+								<ul>
+									<li><a href="#">收款方维护</a></li>
+									<li><a href="#">款项用途维护</a></li>
+								</ul>
+							</li>
+							<li><a href="#">批量转账</a>
+								<ul>
+									<li><a href="#">自选批量转账</a></li>
+									<li><a href="#">自选批量结果查询</a></li>
+									<li><a href="#">文件批量转账</a></li>
+									<li><a href="#">文件批量结果查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">漫游汇款</a>
+								<ul>
+									<li><a href="#">汇出</a></li>
+									<li><a href="#">兑付</a></li>
+									<li><a href="#">退汇</a></li>
+									<li><a href="#">明细查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">自动转账</a>
+								<ul>
+									<li><a href="#">自动转账签约</a></li>
+									<li><a href="#">自动转账关系维护</a></li>
+									<li><a href="#">自动转账解约</a></li>
+									<li><a href="#">查询账户自动转账明细</a></li>
+									<li><a href="#">查询转账关系暂停/恢复明细</a></li>
+								</ul>
+							</li>
+							<li><a href="#">个人资金归集</a>
+								<ul>
+									<li><a href="#">修改资金归集关系</a></li>
+									<li><a href="#">确认资金归集关系</a></li>
+									<li><a href="#">个人资金归集解约</a></li>
+									<li><a href="#">暂停/恢复资金归集</a></li>
+									<li><a href="#">查询签约信息</a></li>
+									<li><a href="#">查询归集金额</a></li>
+									<li><a href="#">查询归集交易明细</a></li>
+									<li><a href="#">查询暂停恢复明细</a></li>
+									<li><a href="#">直接扣款</a></li>
+								</ul>
+							</li>	
+						</ul>
+					</li>
+					<li><a href="#">缴费支付</a>
+						<ul class='submenu'>
+							<li><a href="jiaofei.html" target='content_iframe'>网上缴费</a>
+								<ul>
+									<li><a href="#">网上缴费</a></li>
+									<li><a href="#">缴费查询</a></li>
+									<li><a href="#">缴费信息维护</a></li>
+								</ul>
+							</li>
+							<li><a href="#">账单支付</a>
+								<ul>
+									<li><a href="#">申请账单</a></li>
+									<li><a href="#">支付账单</a></li>
+									<li><a href="#">维护账单</a></li>
+									<li><a href="#">查询账单</a></li>
+								</ul>
+							</li>
+							<li><a href="#">网上支付</a>
+								<ul>
+									<li><a href="#">授权支付签约信息查询</a></li>
+									<li><a href="#">网上支付交易查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">银彩通</a>
+								<ul>
+									<li><a href="#">银彩通交易查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">委托代扣</a>
+								<ul>
+									<li><a href="#">委托代扣签约</a></li>
+									<li><a href="#">委托代扣维护</a></li>
+								</ul>
+							</li>
+							<li><a href="#">手机快速充值</a>
+								<ul>
+									<li><a href="#">充值</a></li>
+									<li><a href="#">充值明细查询</a></li>
+								</ul>
+							</li>
+							
+						</ul>
+					</li>
+					<li><a href="credithome.html" target='content_iframe'>信用卡</a>
+						<ul class='submenu'>
+							<li><a href="#">账户查询</a>
+								<ul>
+									<li><a href="#">账户信息查询</a></li>
+									<li><a href="#">账单查询</a></li>
+									<li><a href="#">交易明细查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">信用卡还款</a>
+								<ul>
+									<li><a href="#">自助还款</a></li>
+									<li><a href="#">约定还款设置</a></li>
+									<li><a href="#">购汇还款</a></li>
+								</ul>
+							</li>
+							<li><a href="#">卡片管理</a>
+								<ul>
+									<li><a href="#">信用卡激活</a></li>
+									<li><a href="#">查询密码修改</a></li>
+									<li><a href="#">挂失补卡</a></li>
+									<li><a href="#">消费凭密设置</a></li>
+									<li><a href="#">申请进度查询</a></li>
+									<li><a href="#">补打密码函</a></li>
+								</ul>
+							</li>
+							<li><a href="#">账户管理</a>
+								<ul>
+									<li><a href="#">信用卡登记</a></li>
+									<li><a href="#">临时额度调整申请</a></li>
+									<li><a href="#">永久额度调整申请</a></li>
+									<li><a href="#">电子账单设置</a></li>
+									<li><a href="#">个人信息设置</a></li>
+									<li><a href="#">补寄对账单</a></li>
+								</ul>
+							</li>
+							<li><a href="#">积分管理</a>
+								<ul>
+									<li><a href="#">积分查询</a></li>
+									<li><a href="#">礼品搜索</a></li>
+								</ul>
+							</li>
+							<li><a href="#">分期管理</a>
+								<ul>
+									<li><a href="#">分期付款申请</a></li>
+									<li><a href="#">分期交易历史查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">支付管理</a>
+								<ul>
+									<li><a href="#">网上支付交易查询</a></li>
+									<li><a href="#">网上支付管理</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">个人贷款</a>
+						<ul class='submenu'>
+							<li><a href="#">贷款申请</a>
+								<ul>
+									<li><a href="#">立即申请</a></li>
+									<li><a href="#">申请进度</a></li>
+									<li><a href="#">记录查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">贷款查询</a>
+								<ul>
+									<li><a href="#">普通贷款</a></li>
+									<li><a href="#">循环/非循环贷款</a></li>
+									<li><a href="#">农户小额贷款</a></li>
+								</ul>
+							</li>
+							<li><a href="#">自助借款</a>
+								<ul>
+									<li><a href="#">循环/非循环贷款借款</a></li>
+									<li><a href="#">农户小额贷款借款</a></li>
+								</ul>
+							</li>
+							<li><a href="#">自助还款</a>
+								<ul>
+									<li><a href="#">循环/非循环贷款还款</a></li>
+									<li><a href="#">农户小额贷款还款</a></li>
+								</ul>
+							</li>
+							<li><a href="#">贷后服务</a>
+								<ul>
+									<li><a href="#">客户信息维护</a></li>
+									<li><a href="#">提前还款申请</a></li>
+									<li><a href="#">提前还款记录</a></li>
+								</ul>
+							</li>
+							<li><a href="#">贷款计算器</a>
+								<ul>
+									<li><a href="#">普通贷款计算器</a></li>
+									<li><a href="#">循环贷款计算器</a></li>
+									<li><a href="#">农户小额贷款计算器</a></li>
+								</ul>
+							</li>
+							<li><a href="#">在线服务</a>
+								<ul>
+									<li><a href="#">咨询交流</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">个人外汇</a>
+						<ul class='submenu'>
+							<li><a href="#">结售汇</a>
+								<ul>
+									<li><a href="#">买入外汇</a></li>
+									<li><a href="#">卖出外汇</a></li>
+									<li><a href="#">历史交易查询</a></li>
+									<li><a href="#">额度查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">外汇宝</a>
+								<ul>
+									<li><a href="#">签约/解约</a></li>
+									<li><a href="#">外汇交易</a></li>
+									<li><a href="#">交易查询/撤单</a></li>
+									<li><a href="#">我的外汇宝</a></li>
+									<li><a href="#">银行牌价定制</a></li>
+									<li><a href="#">更换交易卡</a></li>
+								</ul>
+							</li>
+							<li><a href="#">西联汇款</a>
+								<ul>
+									<li><a href="#">发汇</a></li>
+									<li><a href="#">发汇查询</a></li>
+									<li><a href="#">收汇</a></li>
+									<li><a href="#">收汇查询</a></li>
+									<li><a href="#">收款方维护</a></li>
+								</ul>
+							</li>
+							<li><a href="#">跨境电汇</a>
+								<ul>
+									<li><a href="kuajing.html" target='content_iframe'>汇出汇款</a></li>
+									<li><a href="#">收款方维护</a></li>
+									<li><a href="#">汇出汇款查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">个人信息登记</a>
+								<ul>
+									<li><a href="#">个人信息登记/修改</a></li>
+									<li><a href="#">审核进度查询</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">投资理财</a>
+						<ul class='submenu'>
+							<li><a href="#">基金e站</a>
+								<ul>
+									<li><a href="#">我要买基金</a></li>
+									<li><a href="#">我的基金</a></li>
+									<li><a href="#">交易查询</a></li>
+									<li><a href="#">账户管理</a></li>
+								</ul>
+							</li>
+							<li><a href="#">第三方存管</a>
+								<ul>
+									<li><a href="#">证券交易账户指定</a></li>
+									<li><a href="#">银行转证券</a></li>
+									<li><a href="#">证券转银行</a></li>
+									<li><a href="#">我的外汇宝</a></li>
+									<li><a href="#">银行牌价定制</a></li>
+									<li><a href="#">更换交易卡</a></li>
+								</ul>
+							</li>
+							<li><a href="#">银期转账</a>
+								<ul>
+									<li><a href="#">期货交易账户指定</a></li>
+									<li><a href="#">入金</a></li>
+									<li><a href="#">出金</a></li>
+									<li><a href="#">期货资金账户余额查询</a></li>
+									<li><a href="#">保证金应急转账</a></li>
+								</ul>
+							</li>
+							<li><a href="#">资金托管</a>
+								<ul>
+									<li><a href="#">二手房交易资金托管</a></li>
+								</ul>
+							</li>
+							<li><a href="#">记账式债券</a>
+								<ul>
+									<li><a href="#">签约/解约</a></li>
+									<li><a href="#">我的债券</a></li>
+									<li><a href="#">购买债券</a></li>
+									<li><a href="#">卖出债券</a></li>
+									<li><a href="#">交易明细查询</a></li>
+									<li><a href="#">债券详情查询</a></li>
+									<li><a href="#">债券换卡</a></li>
+									<li><a href="#">债券行情查询</a></li>
+								</ul>
+							</li>
+							<li><a href="#">双利丰</a>
+								<ul>
+									<li><a href="#">签约</a></li>
+									<li><a href="#">签约信息修改</a></li>
+									<li><a href="#">签约/解约信息查询</a></li>
+									<li><a href="#">子账户信息查询</a></li>
+									<li><a href="#">双利丰支取</a></li>
+									<li><a href="#">解约</a></li>
+								</ul>
+							</li>
+							<li><a href="#">通知存款</a>
+								<ul>
+									<li><a href="#">开立通知存款</a></li>
+									<li><a href="#">通知存款查询</a></li>
+									<li><a href="#">建立通知</a></li>
+									<li><a href="#">取消通知</a></li>
+									<li><a href="#">通知存款支取</a></li>
+								</ul>
+							</li>
+							<li><a href="#">定活通</a>
+								<ul>
+									<li><a href="#">活期转定期</a></li>
+									<li><a href="#">定期转活期</a></li>
+									<li><a href="#">活期转活期</a></li>
+									<li><a href="#">我的定期存款</a></li>
+								</ul>
+							</li>
+							<li><a href="#">理财产品</a>
+								<ul>
+									<li><a href="#">理财产品购买</a></li>
+									<li><a href="#">自动理财</a></li>
+									<li><a href="#">我的理财产品</a></li>
+									<li><a href="#">交易明细查询</a></li>
+									<li><a href="#">风险承受能力评测</a></li>
+									<li><a href="#">开通/关闭网银渠道</a></li>
+								</ul>
+							</li>
+							<li><a href="savbonds.html" target='content_iframe'>储蓄国债</a>
+								<ul>
+									<li><a href="#">国债账户管理</a></li>
+									<li><a href="#">国债购买</a></li>
+									<li><a href="#">我的储蓄国债</a></li>
+								</ul>
+							</li>
+							<li><a href="#">账户贵金属</a>
+								<ul>
+									<li><a href="#">签约/解约</a></li>
+									<li><a href="#">签约信息查询/修改</a></li>
+									<li><a href="#">行情及交易</a></li>
+									<li><a href="#">追加资金</a></li>
+									<li><a href="#">资金损益查询</a></li>
+									<li><a href="#">历史交易查询</a></li>
+									<li><a href="#">委托查询/撤单</a></li>
+									<li><a href="#">强平风险场景查询</a></li>
+									<li><a href="#">指定/更换交易账户</a></li>
+								</ul>
+							</li>
+							<li><a href="#">金交所代理</a>
+								<ul>
+									<li><a href="#">签约</a></li>
+									<li><a href="#">签约信息查询/修改</a></li>
+									<li><a href="#">入金</a></li>
+									<li><a href="#">出金</a></li>
+									<li><a href="#">交易资金查询</a></li>
+									<li><a href="#">密码重置</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">客户服务</a>
+						<ul class='submenu'>
+							<li><a href="#">用户名登录维护</a>
+								<ul>
+									<li><a href="#">设置用户名/密码</a></li>
+									<li><a href="#">注销用户名</a></li>
+								</ul>
+							</li>
+							<li><a href="#">网银安全管理</a>
+								<ul>
+									<li><a href="#">介质管理</a></li>
+									<li><a href="#">安全认证手机</a></li>
+								</ul>
+							</li>
+							<li><a href="#">电子银行渠道管理</a>
+								<ul>
+									<li><a href="#">电子银行密码管理</a></li>
+									<li><a href="#">境外消费限额管理</a></li>
+									<li><a href="#">限额管理</a></li>
+								</ul>
+							</li>
+							<li><a href="#">手机银行</a>
+								<ul>
+									<li><a href="#">申请手机银行</a></li>
+									<li><a href="#">注册账户维护</a></li>
+									<li><a href="#">收款方账户维护</a></li>
+									<li><a href="#">缴费信息维护</a></li>
+									<li><a href="#">暂停/恢复手机银行</a></li>
+									<li><a href="#">取消绑定手机号</a></li>
+									<li><a href="#">绑定新手机号</a></li>
+									<li><a href="#">转账维护</a></li>
+									<li><a href="#">注销手机银行</a></li>
+								</ul>
+							</li>
+							<li><a href="#">电话银行</a>
+								<ul>
+									<li><a href="#">注册电话银行</a></li>
+									<li><a href="#">注册账户维护</a></li>
+									<li><a href="#">收款方账户维护</a></li>
+									<li><a href="#">转账维护</a></li>
+									<li><a href="#">暂停/恢复电话银行</a></li>
+									<li><a href="#">注销电话银行</a></li>
+								</ul>
+							</li>
+							<li><a href="#">消息服务</a>
+								<ul>
+									<li><a href="#">签约</a></li>
+									<li><a href="#">维护合约</a></li>
+									<li><a href="#">注销</a></li>
+									<li><a href="#">缴费</a></li>
+									<li><a href="#">查询合约</a></li>
+									<li><a href="#">查询消息明细</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="inner clearfix">
+			<div class="left-container">
+				<div class="account batch" data-icon='&#xf044;'>
+					<span>陈纯冰</span>
+					<span>1644521437181079</span>
+				</div>
+				<div class="login-details" style='display:none'>
+					<div class="title">登录信息</div>
+					<div class="content">
+						<span>您当前的安全工具为K宝</span>
+						<span>您第377次登录农行网银</span>
+						<span>登录IP：187.68.15.7</span>
+					</div>
+				</div>
+				<div class="shoucangjia">
+					<div class="title">收藏夹</div>
+					<div class="content">
+						<ul class="shoucangjia-list">
+							<li>
+								<a href="#">
+									<span class="shoucangjia-icon zhanghu"></span>
+									<span class="shoucangjia-title">账户查询</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="shoucangjia-icon licai"></span>
+									<span class="shoucangjia-title">理财产品</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="shoucangjia-icon jiaofei"></span>
+									<span class="shoucangjia-title">手机充值</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="shoucangjia-icon jijin"></span>
+									<span class="shoucangjia-title">基金</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="shoucangjia-list">
+							<li>
+								<a href="#">
+									<span class="shoucangjia-icon zhanghu"></span>
+									<span class="shoucangjia-title">账户查询</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="shoucangjia-icon licai"></span>
+									<span class="shoucangjia-title">理财产品</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="shoucangjia-icon jiaofei"></span>
+									<span class="shoucangjia-title">手机充值</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="shoucangjia-icon jijin"></span>
+									<span class="shoucangjia-title">基金</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="perbank-settings">
+					<div class="title">网银设置</div>
+					<div class="content">
+						<ul class="setting-list">
+							<li><a href="" class='batch' data-icon='&#xf045;'>用户名登录维护<span class='setflag'>未设置</span></a></li>
+							<li><a href="" class='batch' data-icon='&#xf04e;'>安全设置</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="perbank-more">
+					<div class="title">更多</div>
+					<div class="content">
+						<div class="search-wrapper">
+									<input type="text" id="search-input"/>
+									<span class="search-icon"></span>
+								</div>
+						<ul class="more-list">
+							<li><a href="" class='batch' data-icon='&#xf106;'>公益捐款</a></li>
+							<li><a href="" class='batch' data-icon='&#xf009;'>网上客服</a></li>
+							<li><a href="" class='batch' data-icon='&#xf069;'>安全退出</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="right-container">
+				<div class="main-content-wrapper">
+					<iframe name='content_iframe' id='content_iframe'  frameborder="0" src='home_2.html' ></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="inner text-center">
+			<a href="#" class='footer-link'>网站声明</a>
+			<a href="#" class='footer-link'>服务网点</a>
+			<a href="#" class='footer-link'>联系我们</a>
+			<a href="#" class='footer-link'>客服热线:&nbsp;95599</a>
+			<span>版权归@ AGRICULTRAL BANK OF CHINA 中国农业银行</span>
+		</div>
+	</div>
+</body>
+</html>

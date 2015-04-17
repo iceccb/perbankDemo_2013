@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单笔转账确认</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/public.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]><link href="css/public_ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#btn1").bind('click',function(e){
+				e.preventDefault();
+				$('.alert').slideDown('800');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="cur-location">
+		<span class="title">您当前的位置是：</span>
+		<span class="location">转账汇款 > 单笔转账 > 单笔转账</span>
+	</div>
+	<div class="container">
+		<div class="alert alert-danger collapse" >
+        <strong>密码错误！</strong>请重新输入
+      </div>
+		<form class='form-inline' role='form' action='' method='post'>
+			<div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >转出账户</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static">6228300010019401</p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >转出账户名称</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static">陈纯冰</p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >转入账户</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static">6228300010019402</p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >转入账户名称</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static">陈纯冰</p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >转入账户开户行别</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static">招商银行</p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >转出金额</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static">0.10元</p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >手续费</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static">0.00元</p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >转账用途</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static"></p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >转账时间</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static">2014-01-08 10:45:14</p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >手续费</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<p class="form-control-static">0.00元</p>
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3">
+					<label class='sr-only'>加急标志</label>
+				</div>
+				<div class="col-md-5 col-sm-5 ">
+					<div class="checkbox">
+					    <label>
+					    	<input type="checkbox" >加急
+					    </label>
+  					</div>
+				</div>
+			</div>
+	        <div class="row row-lg">
+				<div class="col-md-3 col-sm-3 text-right">
+					<label class='control-label' >密码</label>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="input-group input-group-sm">
+						<div class="input-group-addon batch">&#xf0c2;</div>
+						<input type="text" class='form-control'>
+	          		</div>
+	        	</div>
+	        	
+			</div>
+			<div class="row row-lg-2">
+				<div class="col-md-6 text-center">
+					<button id='btn1'  class="btn btn-primary btn-sm" type='submit'>提交</button>
+				<button type="button" class="btn btn-primary btn-sm">返回</button>
+	        	</div>
+			</div>
+			
+		</form>
+	</div>
+
+	<div class="container help-wrapper collapse">
+		<div class="help-title">
+			<h4 class="batch" title='余额查询' data-icon='&#xf15a;'>帮助和其他
+			</h4>
+		</div>
+		<ol>
+			<li>您的资金将汇出，实际到账时间取决于收款行系统。</li>
+		</ol>
+	</div>
+</body>
+</html>

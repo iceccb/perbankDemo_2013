@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单笔转账</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/public.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]><link href="css/public_ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+</head>
+<body>
+	<div class="cur-location">
+		<span class="title">您当前的位置是：</span>
+		<span class="location">转账汇款 > 单笔转账 > 单笔转账</span>
+	</div>
+
+	<div class="container">
+		<form class='form-inline' role='form' action='danbi_queren.html' method='post'>
+			<div class="row row-lg">
+				<div class="col-md-3  col-sm-3 text-right">
+					<label class='control-label' for="exampleInputEmail2">转出账户</label>
+				</div>
+				<div class="col-md-6  col-sm-6">
+					<select  class='form-control  input-sm'>
+						<option value="">请选择</option>
+						<option value="">0|北京分行|6228480010644026816|借记卡|陈纯冰</option>
+						<option value="">1|北京分行|6228480010644026817|借记卡|陈纯冰</option>
+						<option value="">2|北京分行|6228480010644026818|借记卡|陈纯冰</option>
+					</select>
+					<a href="kuajing.html"  class="batch tool" title='余额查询' data-icon='&#xf094;'></a>
+	          	</div>
+	        </div>
+	        <div class="row row-lg ">
+				<div class="col-md-3  col-sm-3 text-right">
+					<label class='control-label' for="exampleInputEmail2">转入账户</label>
+				</div>
+				<div class="col-md-6  col-sm-6">
+					<div class="input-group input-group-sm ">
+						<div class="input-group-btn">
+              				<button id='drop1' type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">临时客户组 <span class="caret"></span></button>
+	              			<ul class="dropdown-menu" role="menu" aria-labelledby='drop1'>
+				                <li><a href="#">临时客户组</a></li>
+				                <li><a href="#">同事</a></li>
+				                <li><a href="#">朋友</a></li>
+				            </ul>
+            			</div>
+            			<select  class='form-control' >
+							<option value="">请选择</option>
+							<option value="">0|北京分行|6228480010644026816|借记卡|陈纯冰</option>
+							<option value="">1|北京分行|6228480010644026817|借记卡|陈纯冰</option>
+							<option value="">2|北京分行|6228480010644026818|借记卡|陈纯冰</option>
+						</select>
+					</div>	
+	          	</div>
+	        </div>
+	        <div class="row row-lg">
+				<div class="col-md-3  col-sm-3 text-right">
+					<label class='control-label' for="exampleInputEmail2">转账金额</label>
+				</div>
+				<div class="col-md-3  col-sm-3">
+					<div class="input-group input-group-sm">
+						<div class="input-group-addon">￥</div>
+						<input type="text" class='form-control'>
+	          		</div>
+	        	</div>
+	        	<div class="col-md-2  col-sm-2">
+	        		<div class="input-group input-group-sm">
+						<label class='control-label' for="exampleInputEmail2">大写</label>
+	          		</div>
+	        	</div>
+			</div>
+			<div class="row row-lg">
+				<div class="col-md-3  col-sm-3 text-right">
+					<label class='control-label' for="exampleInputEmail2">转账用途</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<div class="input-group input-group-sm">
+						<select  class='form-control' >
+							<option value="">需要时请选择或输入转账用途</option>
+						</select>
+						<span class="input-group-addon">
+						<input type="checkbox" >自动保存
+						</span>
+					</div>
+	          	</div>
+	        </div>
+	        <div class="container form-button-wrapper">
+				<button  class="btn btn-primary btn-sm" type='submit'>提交</button>
+				<button type="button" class="btn btn-primary btn-sm" >重置</button>
+				<button type="button" class="btn btn-primary btn-sm">取消</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="container help-wrapper">
+		<div class="help-title">
+			<h4 class="batch" title='余额查询' data-icon='&#xf15a;'>帮助和其他
+			</h4>
+		</div>
+		<ol>
+			<li>本功能支持本人网银注册账户向农行和他行个人账户、对公结算账户进行转账。</li>
+			<li>大于5万的跨行转账交易只能在工作日的9:00-16:30实时处理，建议您在此时间段内进行5万元以上的转账。</li>
+			<li>系统支持7*24小时处理5万或5万以下的跨行转账请求。</li>
+			<li>如果要选择的转入账户不在备选项中，则需要在“新增收款方”中进行添加，也可以在“收款方管理”里的“收款方维护”中进行添加。</li>
+		</ol>
+	</div>
+	
+</body>
+</html>

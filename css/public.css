@@ -1,0 +1,175 @@
+*,*:before,*:after {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: transparent ;
+}
+@font-face{
+    font-family:Batch;
+    src:url('../fonts/batch-icons-webfont.eot');
+    src:url('../fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/batch-icons-webfont.woff') format('woff'),
+      url('../fonts/batch-icons-webfont.ttf') format('truetype'),
+      url('../fonts/batch-icons-webfont.svg#batchregular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.batch {
+	font-family: 'Batch';
+	text-decoration: none;
+	outline: none;
+}
+.batch.tool:after {
+	content:attr(data-icon);
+	margin-left: 10px;
+	color: rgb(107, 143, 26);
+	-webkit-transition: text-shadow 0.5s;
+	-moz-transition: text-shadow 0.5s;
+	-ms-transition: text-shadow 0.5s;
+	-o-transition: text-shadow 0.5s;
+	transition: text-shadow 0.5s;
+}
+
+.batch.tool:hover:after {
+	text-shadow: -1px 0px 1px rgba(0,0,0,0.2);
+}
+.batch.tool:hover {
+	text-decoration: none;
+}
+.cur-location {
+	color: #437572;
+	margin: 10px;
+}
+.cur-location > .title:before {
+	font-family: 'Batch';
+	content: '\f07c';
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.row {
+	margin: 5px -15px;
+}
+
+.form-wrapper {
+	padding: 10px;
+	width: 70%;
+	margin: 0 auto;
+}
+.form-ul {
+	list-style: none;
+	font-size: 16px;
+}
+.form-ul > li {
+	padding: 6px 0px;
+}
+.row-ul > li{
+	display: inline-block;
+	padding: 0 30px;
+	height: 28px;
+	line-height: 26px;
+}
+
+.li-left {
+	text-align: right;
+	width: 25%;
+}
+
+.submit-wrapper {
+	margin: 20px 0 0;
+}
+#submit-button {
+	margin-left: 30%;
+	display: block;
+}
+
+.form-inline {
+	font-size: 15px;
+}
+
+.row-lg {
+	margin: 10px -15px;
+}
+
+.row-lg-2 {
+	margin: 20px -15px;
+}
+.form-button-wrapper {
+	margin: 15px auto;
+	text-align: center;
+	
+}
+
+.help-title {
+	color: rgb(107, 143, 26);
+	border: solid 0 rgb(51,51,51);
+	border-bottom-width: 1px;
+	margin: 10px auto;
+}
+.help-title > .batch:before {
+	font-size: 24px;
+	content:attr(data-icon);
+	margin-right: 5px;
+
+}
+
+.form-control.auto-width {
+	width: auto;
+}
+
+.query_basic_wrapper {
+	
+}
+.query_add_body {
+	display: none;
+	border: 1px solid transparent;
+}
+.query_add_footer {
+	text-align: center;
+	padding-bottom: 5px;
+	border: 0 solid rgb(225,225,225);
+	border-top-width: 1px;
+}
+
+.query_result_wrapper {
+	margin-top: 20px;
+}
+.modal-dialog.medium {
+	width: 60%;
+	margin: 10px auto;
+}
+
+.modal-body.condensed {
+	padding: 10px 20px 5px;
+}
+.modal-footer.condensed {
+	padding: 10px 20px;
+}
+
+.table > tbody > tr > td {
+	vertical-align: middle;
+}
+.add_acct_wrapper {
+	border: 1px solid transparent;
+}
+
+#savbonds-img {
+	width: 350px;
+	height: 400px;
+}
+
+.bg-wrapper {
+	background-color: rgb(238, 238, 238);
+	padding: 10px 0;
+}
+
+.introduce-wrapper {
+	margin: 50px 0 20px;
+}
+
+.opr-wrapper {
+	margin-top: 100px;
+}

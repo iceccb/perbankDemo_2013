@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>perbank_home_2</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/home_4.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slides.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+			$('#promotions-slides').slidesjs({
+		        width: 600,
+		        height: 400,
+		        play: {
+		          active: false,
+		          auto: true,
+		          interval: 8000,
+		          swap: true,
+		          pauseOnHover: true
+		        },
+		        navigation: {
+		          active: false
+		        },
+		        pagination: {
+		          effect: "slide",
+		          active: false
+		        }
+	      	});
+		});
+	</script>
+</head>
+<body>
+	<div class="top-wrapper clearfix">
+		<div id="promotions-slides">
+			<img src="images/zdlc_pic2.jpg" alt="自动理财">
+			<img src="images/jijin.jpg" alt="基金宝">
+			<img src="images/guijinshu.jpg" alt="贵金属">
+		</div>
+		<!-- <ul class="right-wrapper">
+			<li></li>
+			<li class='jiange'></li>
+			<li></li>
+		</ul> -->
+	</div>
+	<div class="bottom-wrapper clearfix">
+		<div class="tishi">
+			<h3 class='batch' data-icon='&#xf15a;'>温馨提示</h3>
+		</div>
+		<div class="gonggao">
+			<h3 class='batch' data-icon='&#xf03b;'>重要公告</h3>
+			<ul class="notice-list">
+			<li><a href="#" title='关于宁夏分行系统维护的公告（12月8日）'>关于宁夏分行系统维护的公告（12月8日）</a></li>
+			<li><a href="#" title='关于天津分行系统维护的公告（12月7日-12月8日）'>关于天津分行系统维护的公告（12月7日-12月8日）</a></li>
+			<li><a href="#" title='关于我行基金代销系统升级维护的公告（12月12日）'>关于我行基金代销系统升级维护的公告（12月12日）</a></li>
+			<li><a href="#" title='关于我行电子银行系统暂停服务的公告（12月8日）'>关于我行电子银行系统暂停服务的公告（12月8日）</a></li>
+		</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

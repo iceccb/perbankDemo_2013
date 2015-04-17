@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网上缴费</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/public.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]><link href="css/public_ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+	<script>
+		$(document).ready(function() {
+			$('#acct_sel').bind('change',function(event) {
+				$('.add_acct_wrapper').slideUp('400');
+				var $parent_form = $(this).parents('form');
+				$parent_form.children('[role=acct_detail]').remove();
+				var $new_row = $('<div class="row" role="acct_detail">').appendTo($parent_form);
+				$new_row.append('<div class="col-md-2 col-sm-2 text-right"><label class="control-label">缴费号码</label></div>');
+				$new_row.append('<div class="col-md-5 col-sm-5"><input class="form-control input-sm" value="080025114" disabled></div>');
+			});
+			$('#add_btn').bind('click', function(event) {
+				event.preventDefault();
+				var $parent_form = $(this).parents('form');
+				$parent_form.children('[role=acct_detail]').remove();
+				$('.add_acct_wrapper').slideDown('400');
+				$('#acct_sel')[0].selectedIndex=0;
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="cur-location">
+		<span class="title">您当前的位置是：</span>
+		<span class="location">缴费支付 > 网上缴费</span>
+	</div>
+	<div class="container">
+		<form action="" class="form-inline">
+			<div class="row">
+				<div class="col-md-2 col-sm-2 text-right">
+					<label class='control-label'>缴费信息</label>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<select  class='form-control input-sm' id='acct_sel'>
+						<option value="">请选择</option>
+						<option value="1">代收煤气费|北京热力集团有限责任公司|080025114|北京分行</option>
+						<option value="2">代收福利彩票费|网点即开票|112323|陕西分行</option>
+					</select>										
+	          	</div>
+	          	<div class="col-md-3 col-sm-3">
+	          		<a href="" class="btn" id='add_btn'>新增</a>
+	          		<a href="" class="btn" data-toggle="modal"  data-target="#jiaofeixinxi">维护</a>
+	          	</div>
+			</div>
+			<div class="add_acct_wrapper" style='display:none'>
+				<div class="row">
+					<div class="col-md-2 col-sm-2 text-right">
+						<label class='control-label'>缴费收费行</label>
+					</div>
+					<div class="col-md-5 col-sm-5">
+						<select  class='form-control input-sm' id='acct_sel'>
+							<option value="">请选择</option>
+							<option value="1">北京分行</option>
+							<option value="2">陕西分行</option>
+						</select>										
+		          	</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-sm-2 text-right">
+						<label class='control-label'>缴费类型</label>
+					</div>
+					<div class="col-md-5 col-sm-5">
+						<select  class='form-control input-sm' id='acct_sel'>
+							<option value="">请选择</option>
+							<option value="1">代收煤气费|北京热力集团有限责任公司</option>
+							<option value="2">代收福利彩票费|网点即开票</option>
+						</select>										
+		          	</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-sm-2 text-right">
+						<label class='control-label'>用户编号</label>
+					</div>
+					<div class="col-md-5 col-sm-5">
+						<input type="text" class="form-control input-sm">									
+		          	</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-sm-2">
+						<label class='sr-only'>保存标志</label>
+					</div>
+					<div class="col-md-5 col-sm-5">
+						<div class="checkbox">
+						    <label>
+						    	<input type="checkbox" >自动保存
+						    </label>
+	  					</div>
+					</div>
+				</div>
+			</div>
+			
+		</form>
+		<div class="container text-center">
+				<button type="button" class="btn btn-primary btn-sm">缴费查询</button>
+				<button type="button" class="btn btn-primary btn-sm">缴费</button>
+				<button type="button" class="btn btn-primary btn-sm">取消</button>
+		</div>
+	</div>
+	<div class="container help-wrapper">
+		<div class="help-title">
+			<h4 class="batch" title='余额查询' data-icon='&#xf15a;'>帮助和其他
+			</h4>
+		</div>
+		<ol>
+			<li>请在下拉列表中选择所需查询的缴费类型、商户名称及缴费号码等信息。如果您要选择的缴费信息不在下拉列表中，请点击“新增”。</li>
+			<li>若您想查询欠费，请点击“缴费查询”。</li>
+			<li>各缴费项目的办理时间请咨询当地营业机构。</li>
+		</ol>
+	</div>
+	<div class="modal fade" aria-labelledby="myModlLabel" role="dialog" aria-hidden="true" id="jiaofeixinxi">
+		<div class="modal-dialog medium">
+			<div class="modal-content">	
+		    	<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		        <h4 class="modal-title">缴费信息维护</h4>
+		    	</div>
+		    	<div class="modal-body condensed">
+			        <table class="table table-hover table-condensed">
+			        	<thead>
+			        		<th class='text-center'><input value="" type="checkbox">全选</th>
+			        		<th>缴费分行</th>
+			        		<th>缴费名称</th>
+			        		<th>商户名称</th>
+			        		<th>缴费号码</th>
+			        	</thead>
+			        	<tbody>
+			        		<tr>
+			        			<td class='text-center'><input value="" type="checkbox"></td>
+			        			<td>青海分行</td>
+			        			<td>代收电费</td>
+			        			<td>西宁市供电局</td>
+			        			<td>12345</td>
+			        		</tr>
+			        		<tr>
+			        			<td class='text-center'><input value="" type="checkbox"></td>
+			        			<td>青海分行</td>
+			        			<td>代收移动电话费</td>
+			        			<td>青海省联通公司</td>
+			        			<td>12345678987</td>
+			        		</tr>
+			        	</tbody>
+			        </table>
+		    	</div>   
+		    	<div class="modal-footer condensed">
+            		<button type="button" class="btn btn-default" >删除</button>
+            	</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
